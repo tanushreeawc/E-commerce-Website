@@ -1,0 +1,142 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    text-align: center;
+    margin-left: 50px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 415px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+   
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  
+  .feature {
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  .logo{
+    font-family: 'Dancing Script';
+    font-size: 100px;
+  }
+  .hero-content {
+    animation: fadeInUp 1.5s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Decorations for feature section */
+  .feature {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .feature:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
